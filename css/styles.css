@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4, button {
+  font-family: "Chonburi", cursive;
+}
+
+p {
+  font-family: "Merriweather", serif;
+}
+
+#header {
+  display: flex;
+  background-image: linear-gradient(180deg, #11052c 0%, #3d087b 63%, #f43b86 82%, #ffe459 98%, #fffeee 100%);
+  width: 100%;
+  height: 102vh;
+  align-content: center;
+}
+#header .container {
+  margin: auto;
+}
+#header h1 {
+  color: #ffe459;
+  font-size: 6vh;
+  text-align: center;
+}
+@media only screen and (max-width: 672px) {
+  #header h1 {
+    font-size: 3.5vh;
+  }
+}
+#header h2 {
+  color: #ffe459;
+  font-size: 3vh;
+  text-align: center;
+  margin-top: 1vh;
+}
+@media only screen and (max-width: 672px) {
+  #header h2 {
+    font-size: 2vh;
+  }
+}
+#header button {
+  display: block;
+  width: 45vh;
+  margin: 4vh auto;
+  font-size: 4vh;
+  text-align: center;
+  background-color: #ffe459;
+  color: #11052c;
+  border: none;
+  border-radius: 100vh;
+  padding: 1% 0;
+}
+@media only screen and (max-width: 672px) {
+  #header button {
+    font-size: 2.5vh;
+    width: 30vh;
+  }
+}
+#header .circle-container {
+  width: 45vh;
+  margin: 0 auto;
+  background-color: #11052c;
+  border-radius: 50%;
+}
+#header .circle-container img {
+  padding-top: 10%;
+  padding-left: 9%;
+  display: block;
+  width: 100%;
+  height: auto;
+  clip-path: circle(50% at 50% 50%);
+}
+@media only screen and (max-width: 672px) {
+  #header .circle-container {
+    font-size: 2.5vh;
+    width: 30vh;
+  }
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffeee;
+}
+#info h2 {
+  color: #11052c;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 672px) {
+  #info h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+  }
+}
+#info h3 {
+  color: #3d087b;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 7%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info h3 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 672px) {
+  #info h3 {
+    display: none;
+  }
+}
+#info .img-click {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 auto 2%;
+}
+#info .img-click img {
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click img {
+    width: 80%;
+    margin: auto;
+  }
+}
+#info .img-click .face {
+  position: absolute;
+  width: 16%;
+  height: 18%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#info .img-click .chest {
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  background-color: transparent;
+  top: 18%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#info .img-click .leftarm {
+  position: absolute;
+  width: 35%;
+  height: 8%;
+  background-color: transparent;
+  top: 17%;
+  right: 0;
+}
+#info .img-click .rightarm {
+  position: absolute;
+  width: 35%;
+  height: 8%;
+  background-color: transparent;
+  top: 19%;
+}
+#info .img-click .abs {
+  position: absolute;
+  width: 20%;
+  height: 15%;
+  background-color: transparent;
+  top: 38%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#info .img-click .thighs {
+  position: absolute;
+  width: 23%;
+  height: 20%;
+  background-color: transparent;
+  top: 53%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#info .img-click .feet {
+  position: absolute;
+  width: 28%;
+  height: 27%;
+  background-color: transparent;
+  top: 73%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#info .img-click .card {
+  position: absolute;
+  padding: 1.6em;
+  border-radius: 1em;
+  background-color: #252525;
+  color: #fffeee;
+  line-height: 1.5;
+  height: fit-content;
+}
+#info .img-click .card h4 {
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card h4 {
+    font-size: 1rem;
+  }
+}
+#info .img-click .card p {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card p {
+    font-size: 0.8rem;
+  }
+}
+#info .img-click .card#face {
+  display: none;
+  width: 16em;
+  right: 3%;
+  top: -9%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card#face {
+    left: 65%;
+    right: auto;
+    top: 30%;
+    margin: auto;
+    width: 13.5em;
+  }
+}
+#info .img-click .card#chest {
+  display: none;
+  left: 15%;
+  top: 28%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card#chest {
+    left: 65%;
+    right: auto;
+    top: 30%;
+    margin: auto;
+  }
+}
+#info .img-click .card#leftarm {
+  display: none;
+  width: 15em;
+  right: -15.5em;
+  top: 10%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card#leftarm {
+    left: 65%;
+    right: auto;
+    top: 30%;
+    margin: auto;
+    width: 13em;
+  }
+}
+#info .img-click .card#rightarm {
+  display: none;
+  width: 15.5em;
+  left: -16em;
+  top: 14%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card#rightarm {
+    left: 65%;
+    right: auto;
+    top: 30%;
+    margin: auto;
+    width: 13em;
+  }
+}
+#info .img-click .card#abs {
+  display: none;
+  right: 23%;
+  top: 43%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card#abs {
+    left: 65%;
+    right: auto;
+    top: 30%;
+    margin: auto;
+  }
+}
+#info .img-click .card#thighs {
+  display: none;
+  width: 15em;
+  left: 2%;
+  top: 50%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card#thighs {
+    left: 65%;
+    right: auto;
+    top: 30%;
+    margin: auto;
+    width: 13em;
+  }
+}
+#info .img-click .card#feet {
+  display: none;
+  width: 17em;
+  right: -7%;
+  top: 75%;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #info .img-click .card#feet {
+    left: 65%;
+    right: auto;
+    top: 30%;
+    margin: auto;
+    width: 13em;
+  }
+}
+
+#features {
+  display: none;
+}
+@media only screen and (max-width: 672px) {
+  #features {
+    display: block;
+    background-color: #252525;
+    color: #fffeee;
+  }
+}
+@media only screen and (max-width: 672px) {
+  #features div {
+    margin: 5%;
+  }
+}
+@media only screen and (max-width: 672px) {
+  #features div h4 {
+    margin-bottom: 2%;
+  }
+}
+
+#cta.container {
+  background-color: #11052c;
+  padding: 7% 10%;
+}
+#cta.container h2 {
+  color: #fffeee;
+  text-align: center;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #cta.container h2 {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 672px) {
+  #cta.container h2 {
+    font-size: 1.7rem;
+  }
+}
+#cta.container button {
+  display: block;
+  width: 37%;
+  margin: 3% auto 0;
+  font-size: 2.3rem;
+  text-align: center;
+  background-color: #ffe459;
+  color: #11052c;
+  border: none;
+  border-radius: 10rem;
+  padding: 3% 0;
+}
+@media only screen and (max-width: 1250px) and (min-width: 672px) {
+  #cta.container button {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 672px) {
+  #cta.container button {
+    width: 50%;
+    margin-top: 5%;
+    font-size: 1.2rem;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 5% 10%;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
