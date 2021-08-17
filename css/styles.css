@@ -59,6 +59,7 @@ p {
   border: none;
   border-radius: 100vh;
   padding: 1% 0;
+  cursor: pointer;
 }
 @media only screen and (max-width: 672px) {
   #header button {
@@ -384,6 +385,7 @@ p {
   border: none;
   border-radius: 10rem;
   padding: 3% 0;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1250px) and (min-width: 672px) {
   #cta.container button {

@@ -53,6 +53,7 @@
         border: none;
         border-radius: 100vh;
         padding: 1% 0;
+        cursor: pointer;
 
         @include mobile {
             font-size: 2.5vh;
@@ -351,6 +352,7 @@
         border: none;
         border-radius: 10rem;
         padding: 3% 0;
+        cursor: pointer;
 
         @include tablet {
             font-size: 1.5rem;
