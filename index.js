@@ -47,7 +47,7 @@ const setTPose = function(imgPath) {
 
 
 faceBox.addEventListener("click", () => {displayCard(faceCard)});
-faceBox.addEventListener("mouseenter", () => setTPose("./images/Head.png"));
+faceBox.addEventListener("mouseenter", () => setTPose("./images/head.png"));
 faceBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 chestBox.addEventListener("click", () => {displayCard(chestCard)});
@@ -55,11 +55,11 @@ chestBox.addEventListener("mouseenter", () => setTPose("./images/torso.png"));
 chestBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 rightArmBox.addEventListener("click", () => {displayCard(rightArmCard)});
-rightArmBox.addEventListener("mouseenter", () => setTPose("./images/right arm.png"));
+rightArmBox.addEventListener("mouseenter", () => setTPose("./images/rightarm.png"));
 rightArmBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 leftArmBox.addEventListener("click", () => {displayCard(leftArmCard)});
-leftArmBox.addEventListener("mouseenter", () => setTPose("./images/left arm.png"));
+leftArmBox.addEventListener("mouseenter", () => setTPose("./images/leftarm.png"));
 leftArmBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 absBox.addEventListener("click", () => {displayCard(absCard)});
