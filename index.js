@@ -1,3 +1,5 @@
+const tpose = document.getElementById("tpose");
+
 const faceBox = document.getElementsByClassName("face")[0];
 const chestBox = document.getElementsByClassName("chest")[0];
 const rightArmBox = document.getElementsByClassName("rightarm")[0];
@@ -37,17 +39,37 @@ const displayCard = function (card) {
     }
 }
 
+const setTPose = function(imgPath) {
+    if(!mobile.matches){
+        tpose.src = imgPath;
+    }
+}
+
 
 faceBox.addEventListener("click", () => {displayCard(faceCard)});
+faceBox.addEventListener("mouseenter", () => setTPose("./images/Head.png"));
+faceBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 chestBox.addEventListener("click", () => {displayCard(chestCard)});
+chestBox.addEventListener("mouseenter", () => setTPose("./images/torso.png"));
+chestBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 rightArmBox.addEventListener("click", () => {displayCard(rightArmCard)});
+rightArmBox.addEventListener("mouseenter", () => setTPose("./images/right arm.png"));
+rightArmBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 leftArmBox.addEventListener("click", () => {displayCard(leftArmCard)});
+leftArmBox.addEventListener("mouseenter", () => setTPose("./images/left arm.png"));
+leftArmBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 absBox.addEventListener("click", () => {displayCard(absCard)});
+absBox.addEventListener("mouseenter", () => setTPose("./images/torso.png"));
+absBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 thighsBox.addEventListener("click", () => {displayCard(thighsCard)});
+thighsBox.addEventListener("mouseenter", () => setTPose("./images/legs.png"));
+thighsBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
     
 feetBox.addEventListener("click", () => {displayCard(feetCard)});
+feetBox.addEventListener("mouseenter", () => setTPose("./images/legs.png"));
+feetBox.addEventListener("mouseout", () => setTPose("./images/t-pose.png"));
