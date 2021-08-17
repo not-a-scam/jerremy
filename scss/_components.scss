@@ -382,6 +382,11 @@
             font-size: 3.5em;
             color: $dark-purple;
             margin-bottom: 1em;
+
+            @include mobile {
+                font-size: 1.8em;
+                margin: 1.5em 0;
+            }
         }
 
         #eligibility {
@@ -395,6 +400,10 @@
                 color: $dark-purple;
                 margin-bottom: 1em;
                 font-size: 1.7em;
+
+                @include mobile {
+                    font-size: 1em;
+                }
             }
 
             ul {
@@ -403,7 +412,19 @@
                 li {
                     font-size: 1.5em;
                     margin: .5em;
+                    @include mobile {
+                        font-size: .8em;
+                    }
                 }
+
+                @include mobile {
+                    padding-left: 1em;
+                }
+            }
+
+            @include mobile {
+                padding: 2em;
+                margin-bottom: 1em;
             }
         }
 
@@ -419,12 +440,18 @@
                     font-size: 1.2em;
                     margin-bottom: .5em;
                     margin-top: 1em;
+                    @include mobile {
+                        font-size: 1em;
+                    }
                 }
 
                 label[for="yes"], label[for="no"]{
                     display: inline;
                     font-size: 1.1em;
                     font-family: 'Merriweather', serif;
+                    @include mobile {
+                        font-size: .8em;
+                    }
                 }
 
                 input[type="text"]{
@@ -432,6 +459,14 @@
                     font-family: 'Merriweather', serif;
                     padding: .5em 1em;
                     font-size: 1em;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: $grey;
+                    border-radius: .5em;
+                    outline: none;
+                    @include mobile {
+                        font-size: .8em;
+                    }
                 }
 
                 textarea {
@@ -442,9 +477,21 @@
                     font-size: 1em;
                     padding: .7em 1em;
                     line-height: 1.5;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: $grey;
+                    border-radius: .5em;
+                    outline: none;
+                    @include mobile {
+                        font-size: .8em;
+                    }
                 }
 
                 div {
+                    margin-bottom: .5em;
+                }
+
+                @include mobile {
                     margin-bottom: .5em;
                 }
             }
@@ -458,9 +505,16 @@
                 border-color: $dark-purple;
                 background-color: $yellow;
                 color: $dark-purple;
+
+                @include mobile {
+                    font-size: 1em;
+                }
             }
         }
     }
 
+    @include mobile {
+        padding: 10%;
+    }
 
 }
