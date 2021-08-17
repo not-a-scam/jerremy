@@ -26,59 +26,61 @@
                     <li>Applicant must be hot</li>
                 </ul>
             </div>
-            <form action="">
+            <form id="application-form">
                 <div class="input">
-                    <label for="name">Name</label>
-                    <input type="text" name="name">
+                    <label for="name">Name<span class="warning">This field is empty!</span></label>
+                    <input type="text" name="name" id="name">
                 </div>
 
                 <div class="input">
-                    <label for="age">Age</label>
-                    <input type="text" name="age">
+                    <label for="age">Age<span class="warning">This field is empty!</span></label>
+                    <input type="text" name="age" id="age">
                 </div>
         
                 <div class="input">
-                    <label for="instagram">Instagram Handle</label>
-                    <input type="text" name="instagram">
+                    <label for="instagram">Instagram Handle<span class="warning">This field is empty!</span></label>
+                    <input type="text" name="instagram" id="instagram">
                 </div>
         
                 <div class="input">
-                    <label for="writeup">Give a short description about yourself</label>
-                    <textarea name="writeup"></textarea>
+                    <label for="writeup">Give a short description about yourself<span class="warning">This field is empty!</span></label>
+                    <textarea name="writeup" id="writeup"></textarea>
                 </div>
         
                 <div class="input">
-                    <label for="reason">Why do you want to apply?</label>
-                    <textarea name="writeup"></textarea>
+                    <label for="reason">Why do you want to apply?<span class="warning">This field is empty!</span></label>
+                    <textarea name="reason" id="reason"></textarea>
                 </div>
-        
+
                 <div class="input">
-                    <label>Are you really sure you want to apply?</label>
+                    <label id="risk-label">Do you acknowledge the risks of application?<span class="warning">You have to agree to apply!</span></label>
                     <div>
-                        <input type="radio" name="certain" id="yes">
-                        <label for="yes">yes</label>
+                        <input type="radio" name="risk" id="yes-risk">
+                        <label for="yes-risk">yes</label>
                     </div>
                     <div>
-                        <input type="radio" name="certain" id="no">
-                        <label for="no">no</label>
+                        <input type="radio" name="risk" id="no-risk">
+                        <label for="no-risk">no</label>
                     </div>
                 </div>
 
                 <div class="input">
-                    <label>Do you acknowledge the risks of application?</label>
+                    <label id="certain-label">Are you really sure you want to apply?<span class="warning">You have to agree to apply!</span></label>
                     <div>
-                        <input type="radio" name="risk" id="yes">
-                        <label for="yes">yes</label>
+                        <input type="radio" name="certain" id="yes-certain">
+                        <label for="yes-certain">yes</label>
                     </div>
                     <div>
-                        <input type="radio" name="risk" id="no">
-                        <label for="no">no</label>
+                        <input type="radio" name="certain" id="no-certain">
+                        <label for="no-certain">no</label>
                     </div>
                 </div>
         
-                <button type="submit">Apply</button>
+                <button id="submit-application" type="submit">Apply</button>
             </form>
         </div>
+
+        <script src="./form.js" type="text/javascript"></script>
     </section>
 </body>
 </html>

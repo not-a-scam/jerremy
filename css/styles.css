@@ -472,6 +472,7 @@ p {
   margin-bottom: 2em;
 }
 #application .content form .input label {
+  position: relative;
   display: block;
   font-size: 1.2em;
   margin-bottom: 0.5em;
@@ -482,13 +483,23 @@ p {
     font-size: 1em;
   }
 }
-#application .content form .input label[for=yes], #application .content form .input label[for=no] {
+#application .content form .input label .warning {
+  display: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: -1.3em;
+  content: "This field is empty!";
+  color: #f43b86;
+  font-size: 0.8em;
+}
+#application .content form .input label[for=yes-risk], #application .content form .input label[for=no-risk], #application .content form .input label[for=yes-certain], #application .content form .input label[for=no-certain] {
   display: inline;
   font-size: 1.1em;
   font-family: "Merriweather", serif;
 }
 @media only screen and (max-width: 672px) {
-  #application .content form .input label[for=yes], #application .content form .input label[for=no] {
+  #application .content form .input label[for=yes-risk], #application .content form .input label[for=no-risk], #application .content form .input label[for=yes-certain], #application .content form .input label[for=no-certain] {
     font-size: 0.8em;
   }
 }

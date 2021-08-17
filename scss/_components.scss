@@ -436,6 +436,7 @@
             .input {
                 margin-bottom: 2em;
                 label {
+                    position: relative;
                     display: block;
                     font-size: 1.2em;
                     margin-bottom: .5em;
@@ -443,9 +444,20 @@
                     @include mobile {
                         font-size: 1em;
                     }
+
+                    .warning {
+                        display: none;
+                        position: absolute;
+                        margin: auto;
+                        left: 0;
+                        top: -1.3em;
+                        content: "This field is empty!";
+                        color: $pink;
+                        font-size: .8em;
+                    }
                 }
 
-                label[for="yes"], label[for="no"]{
+                label[for="yes-risk"], label[for="no-risk"], label[for="yes-certain"], label[for="no-certain"]{
                     display: inline;
                     font-size: 1.1em;
                     font-family: 'Merriweather', serif;
