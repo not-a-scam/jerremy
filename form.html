@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlfriend Application</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Merriweather&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section id="application" class="container">
+        <div class="content">
+            <h1>Girlfriend Application</h1>
+            <div id="eligibility">
+                <h2>Eligibility:</h2>
+                <ul>
+                    <li>Applicant cannot be too young</li>
+                    <li>Applicant cannot be too old</li>
+                    <li>Applicant must be female</li>
+                    <li>Applicant must be hot</li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="input">
+                    <label for="age">Age</label>
+                    <input type="text" name="age">
+                </div>
+        
+                <div class="input">
+                    <label for="instagram">Instagram Handle</label>
+                    <input type="text" name="instagram">
+                </div>
+        
+                <div class="input">
+                    <label for="writeup">Give a short description about yourself</label>
+                    <textarea name="writeup"></textarea>
+                </div>
+        
+                <div class="input">
+                    <label for="reason">Why do you want to apply?</label>
+                    <textarea name="writeup"></textarea>
+                </div>
+        
+                <div class="input">
+                    <label>Are you really sure you want to apply?</label>
+                    <div>
+                        <input type="radio" name="certain" id="yes">
+                        <label for="yes">yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="certain" id="no">
+                        <label for="no">no</label>
+                    </div>
+                </div>
+
+                <div class="input">
+                    <label>Do you acknowledge the risks of application?</label>
+                    <div>
+                        <input type="radio" name="risk" id="yes">
+                        <label for="yes">yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="risk" id="no">
+                        <label for="no">no</label>
+                    </div>
+                </div>
+        
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

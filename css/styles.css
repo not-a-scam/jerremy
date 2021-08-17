@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, button {
+h1, h2, h3, h4, button, label {
   font-family: "Chonburi", cursive;
 }
 
@@ -398,6 +398,90 @@ p {
     margin-top: 5%;
     font-size: 1.2rem;
   }
+}
+
+#application {
+  background: radial-gradient(circle, #ffe459 12%, #f43b86 46%, #3d087b 76%, #11052c 100%);
+}
+#application .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fffeee;
+  padding: 5% 7%;
+  border-radius: 3em;
+}
+#application .content h1 {
+  text-align: center;
+  font-size: 3.5em;
+  color: #11052c;
+  margin-bottom: 1em;
+}
+#application .content #eligibility {
+  border: solid;
+  border-color: #11052c;
+  border-radius: 3em;
+  padding: 5%;
+  margin-bottom: 3em;
+}
+#application .content #eligibility h2 {
+  color: #11052c;
+  margin-bottom: 1em;
+  font-size: 1.7em;
+}
+#application .content #eligibility ul {
+  padding-left: 2em;
+}
+#application .content #eligibility ul li {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+#application .content form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+#application .content form .input {
+  margin-bottom: 2em;
+}
+#application .content form .input label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+#application .content form .input label[for=yes], #application .content form .input label[for=no] {
+  display: inline;
+  font-size: 1.1em;
+  font-family: "Merriweather", serif;
+}
+#application .content form .input input[type=text] {
+  width: 100%;
+  font-family: "Merriweather", serif;
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
+#application .content form .input textarea {
+  resize: none;
+  width: 100%;
+  height: 15vh;
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  line-height: 1.5;
+}
+#application .content form .input div {
+  margin-bottom: 0.5em;
+}
+#application .content form button {
+  width: fit-content;
+  margin: auto;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  border-radius: 10vh;
+  border-color: #11052c;
+  background-color: #ffe459;
+  color: #11052c;
 }
 
 .container {
