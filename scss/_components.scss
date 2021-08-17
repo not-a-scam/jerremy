@@ -1,0 +1,365 @@
+@use "./base" as *;
+
+@mixin tablet-card {
+    @include tablet {
+        left: 65%;
+        right: auto;
+        top: 30%;
+        margin: auto;
+        @content
+    }
+}
+
+#header {
+    display: flex;
+    background-image: linear-gradient(180deg, $dark-purple 0%, $purple 63%, $pink 82%, $yellow 98%, $white 100%);
+    width: 100%;
+    height: 102vh;
+    align-content: center;
+    
+    .container{
+        margin: auto;
+    }
+
+    h1 {
+        color: $yellow;
+        font-size: 6vh;
+        text-align: center;
+
+        @include mobile {
+            font-size: 3.5vh;
+        }
+    }
+
+    h2 {
+        color: $yellow;
+        font-size: 3vh;
+        text-align: center;
+        margin-top: 1vh;
+
+        @include mobile {
+            font-size: 2vh;
+        }
+    }
+    
+    button {
+        display: block;
+        width: 45vh;
+        margin: 4vh auto;
+        font-size: 4vh;
+        text-align: center;
+        background-color: $yellow;
+        color: $dark-purple;
+        border: none;
+        border-radius: 100vh;
+        padding: 1% 0;
+
+        @include mobile {
+            font-size: 2.5vh;
+            width: 30vh;
+        }
+    }
+
+    .circle-container{
+        width: 45vh;
+        margin: 0 auto;
+        background-color: $dark-purple;
+        border-radius: 50%;
+        img {
+            padding-top: 10%;
+            padding-left: 9%;
+            display: block;
+            width: 100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        @include mobile {
+            font-size: 2.5vh;
+            width: 30vh;
+        }
+    }
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+
+    h2 {
+        color: $dark-purple;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1%;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+
+        @include mobile {
+            font-size: 1.3rem;
+            margin-bottom: 5%;
+        }
+    }
+
+    h3 {
+        color: $purple;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 7%;
+
+        @include tablet {
+            font-size: 1.2rem;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .img-click {
+        position: relative;
+        flex-grow: 1;
+        margin: 0 auto 2%;
+        img {
+            display: block;
+            width: 100%;
+            @include tablet{
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        .face {
+            position: absolute;
+            width: 16%;
+            height: 18%;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .chest{
+            position: absolute;
+            width: 30%;
+            height: 20%;
+            background-color: transparent;
+            top: 18%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .leftarm{
+            position: absolute;
+            width: 35%;
+            height: 8%;
+            background-color: transparent;
+            top: 17%;
+            right: 0;
+        }
+
+        .rightarm{
+            position: absolute;
+            width: 35%;
+            height: 8%;
+            background-color: transparent;
+            top: 19%;
+        }
+
+        .abs{
+            position: absolute;
+            width: 20%;
+            height: 15%;
+            background-color: transparent;
+            top: 38%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .thighs{
+            position: absolute;
+            width: 23%;
+            height: 20%;
+            background-color: transparent;
+            top: 53%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .feet{
+            position: absolute;
+            width: 28%;
+            height: 27%;
+            background-color: transparent;
+            top: 73%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .card {
+            position: absolute;
+            padding: 1.6em;
+            border-radius: 1em;
+            background-color: $grey;
+            color: $white;
+            line-height: 1.5;
+            height: fit-content;
+    
+            h4{
+                margin-bottom: .3rem;
+                font-size: 1.3rem;
+                @include tablet {
+                    font-size: 1rem;
+                }
+            }
+    
+            p {
+                font-size: 1rem;
+                @include tablet {
+                    font-size: .8rem;
+                }
+            }
+
+        }
+    
+        .card#face {
+            display: none;
+            width: 16em;
+            right: 3%;
+            top: -9%;
+
+            @include tablet-card {
+                width: 13.5em;
+            }
+        }
+    
+        .card#chest {
+            display: none;
+            left: 15%;
+            top: 28%;
+
+            @include tablet-card
+        }
+    
+        .card#leftarm {
+            display: none;
+            width: 15em;
+            right: -15.5em;
+            top: 10%;
+
+            @include tablet-card {
+                width: 13em;
+            }
+        }
+    
+        .card#rightarm {
+            display: none;
+            width: 15.5em;
+            left: -16em;
+            top: 14%;
+
+            @include tablet-card {
+                width: 13em;
+            }
+        }
+    
+        .card#abs {
+            display: none;
+            right: 23%;
+            top: 43%;
+
+            @include tablet-card
+        }
+    
+        .card#thighs {
+            display: none;
+            width: 15em;
+            left: 2%;
+            top: 50%;
+
+            @include tablet-card {
+                width: 13em;
+            }
+        }
+    
+        .card#feet {
+            display: none;
+            width: 17em;
+            right: -7%;
+            top: 75%;
+
+            @include tablet-card {
+                width: 13em;
+            }
+        }
+    }
+}
+
+#features{
+    display: none;
+
+    @include mobile {
+        display: block;
+        background-color: $grey;
+        color: $white;
+    }
+
+    div {
+        @include mobile {
+            margin: 5%;
+        }
+
+        h4 {
+            @include mobile {
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
+
+#cta.container{
+    background-color: $dark-purple;
+    padding: 7% 10%;
+    h2 {
+        color: $white;
+        text-align: center;
+        font-size: 2.5rem;
+
+        @include tablet {
+            font-size: 1.7rem;
+        }
+
+        @include mobile {
+            font-size: 1.7rem;
+        }
+    }
+
+    button {
+        display: block;
+        width: 37%;
+        margin: 3% auto 0;
+        font-size: 2.3rem;
+        text-align: center;
+        background-color: $yellow;
+        color: $dark-purple;
+        border: none;
+        border-radius: 10rem;
+        padding: 3% 0;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+
+        @include mobile {
+            width: 50%;
+            margin-top: 5%;
+            font-size: 1.2rem;
+        }
+    }
+}

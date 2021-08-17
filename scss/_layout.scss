@@ -1,0 +1,9 @@
+@use "./base" as *;
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+    overflow: hidden;
+}
