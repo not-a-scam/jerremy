@@ -150,6 +150,7 @@ p {
   left: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
 }
 #info .img-click .chest {
   position: absolute;
@@ -160,6 +161,7 @@ p {
   left: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
 }
 #info .img-click .leftarm {
   position: absolute;
@@ -168,6 +170,7 @@ p {
   background-color: transparent;
   top: 17%;
   right: 0;
+  cursor: pointer;
 }
 #info .img-click .rightarm {
   position: absolute;
@@ -175,6 +178,7 @@ p {
   height: 8%;
   background-color: transparent;
   top: 19%;
+  cursor: pointer;
 }
 #info .img-click .abs {
   position: absolute;
@@ -185,6 +189,7 @@ p {
   left: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
 }
 #info .img-click .thighs {
   position: absolute;
@@ -195,6 +200,7 @@ p {
   left: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
 }
 #info .img-click .feet {
   position: absolute;
@@ -205,6 +211,7 @@ p {
   left: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
 }
 #info .img-click .card {
   position: absolute;
